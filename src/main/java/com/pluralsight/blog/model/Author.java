@@ -26,6 +26,7 @@ public class Author {
 
     public Author() {
         super();
+        this.posts =  new ArrayList<>();
     }
 
     public Author(String username, String firstname, String lastname, String password) {
@@ -33,7 +34,6 @@ public class Author {
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
-        this.posts =  new ArrayList<>();
         setPassword(password);
     }
 
